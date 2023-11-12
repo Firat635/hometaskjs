@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+// API: https://northwind.vercel.app/api/customers
+
+
+// /customers
+
+// Get daxil
+// Axios ile bir cutomer əlavə edən,
+// Axios ile bir customer silən,
+// Axios ile bir customer update edən funksiyalarınız olacaq. Eyni qaydada bu funksiyaların fetch variatlarını da yazacaqsız.
+
+
+// axios method-----
+
+// axios.get('https://northwind.vercel.app/api/products')
+// .then((res) => console.log(res.data))
+// let data={
+//     class:"SWP 201",
+//     name:"Firat"
+// }
+// axios.post('https://northwind.vercel.app/api/products',data)
+
+let data={
+    class:"SWP 201",
+    name:"Firat"
+}
+axios.put('https://northwind.vercel.app/api/products',data)
+
+// let data={
+//     class:"SWP 201",
+//     name:"Firat"
+// }
+// axios.patch('https://northwind.vercel.app/api/products',data)
+
+
+
+// fecht method -----
+
+        // function myfnc(){
+        //     fetch("https://northwind.vercel.app/api/products",{
+        //         method:"POST",
+        //         headers:{"Content-type":"application/json"},
+        //         body:JSON.stringify({
+        //             supplierId:"api",
+        //             categoryId:" melumatlari",
+        //             quantityPerUnit:"deyisdi"
+        //         })
+        //     })
+        // }
+
+        // // myfnc()
+        // function myfnc(){
+        //     fetch("https://northwind.vercel.app/api/products/6",{
+        //         method:"DELETE",
+        //     })
+        // }
+        
+        // // myfnc()
+        // function myfnc(){
+        //     fetch("https://northwind.vercel.app/api/products/5",{
+        //         method:"PUT",
+                    // headers:{"Content-type":"application/json"},
+        //         body:JSON.stringify({
+        //             supplierId:"api",
+        //             categoryId:" melumatlari",
+        //             quantityPerUnit:"deyisdi"
+        //         })
+        //     })
+        // }
+        
+        // // myfnc()
+        // function myfnc(){
+        //     fetch("https://northwind.vercel.app/api/products/5",{
+        //         method:"PATCH",
+        //  headers:{"Content-type":"application/json"},
+        //         body:JSON.stringify({
+        //             supplierId:"api",
+        //             categoryId:" melumatlari",
+        //             quantityPerUnit:"deyisdi"
+        //         })
+        //     })
+        // }
+
+
+
+
+    </script>
+</body>
+</html>
